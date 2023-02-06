@@ -5,34 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME PAGE</title>
-    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <nav id="nav-menu">
-      <ul>
-        <li><a class="nav-link home" href="#home">HOME</a></li>
-        <li><a class="nav-link about" href="#about">ABOUT</a></li>
-        <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
-        <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
-        <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-        <li><a class="nav-link resume" href="#"></a></li>
-        <a
-          id="resume-button-1"
-          onclick="window.open('./resume/Abhishek-Resume.pdf', '_blank');"
-          download=""
-          >Resume
-        </a>
-      </ul>
+      <div id="child1">
+        <a href="#">AJIT</Ajit></a>
+      </div>
+      <div id="child2">
+        <a class="nav-link home" href="#home">HOME</a>
+        <a class="nav-link about" href="#about">ABOUT</a>
+        <a class="nav-link skills" href="#skills">SKILLS</a>
+        <a class="nav-link projects" href="#projects">PROJECTS</a>
+        <a class="nav-link contact" href="#contact">CONTACT</a>
+        <!-- <a class="nav-link resume" href="#"></a> -->
+          <a
+            id="resume-button-1"
+            onclick="window.open('./resume/Abhishek-Resume.pdf', '_blank');"
+            download=""
+            >Resume
+          </a>
+      </div>
+     
     </nav>
     <!-------------------- HOME ---------------------->
     <section id="home">
-      <img src="./src/image/Ajit.jpg" class="home-img" alt="#" />
-      <a
+      <div id="child1">
+         <h1>Hi,</h1>
+          <h1>I'm <span>Ajit Kumar Khatua</span></h1>
+          <h1>Full Stack Web Developer</h1>
+          <div id="logo">
+            <a href="https://github.com/Ajit-kumar-khatua" target="_blank"><img src="./src/image/github logo.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/ajit-kumar-khatua-4631ab215" target="_blank"><img src="./src/image/linkedin logo.png" alt=""></a>
+          </div> 
+          <button id="resume-btn">Resume</button>       
+        </div>
+        <div>
+          <img src="./src/image/imageedit_1_5029899168.png" class="home-img" alt="#" /> 
+        </div>
+      <!-- <a
         id="resume-button-2"
         onclick="window.open('./resume/Abhishek-Resume.pdf', '_blank');"
         download=""
         >Resume2</a
-      >
+      > -->
     </section>
     <!-------------------- ABOUT ---------------------->
     <section id="about" class="about section">
@@ -73,7 +89,7 @@
     <section id="projects">
       <!-- 1 -->
       <div class="project-card">
-        <img src="./src/image/Baby's Fashion.png" alt="">
+        <!-- <img src="./src/image/Baby's Fashion.png" alt=""> -->
         <title class="project-title">Baby's Fashion</title>
         <p class="project-description">Description</p>
         <p class="project-tech-stack">Tech Stack</p>
@@ -82,7 +98,7 @@
       </div>
       <!-- 2 -->
       <div class="project-card">
-        <img src="./src//image/MY tv.png" alt="">
+        <!-- <img src="./src//image/MY tv.png" alt=""> -->
         <title class="project-title">MyTv</title>
         <p class="project-description">Description</p>
         <p class="project-tech-stack">Tech Stack</p>
@@ -91,7 +107,7 @@
       </div>
       <!-- 3 -->
       <div class="project-card">
-        <img src="./src/image/Happy buy.png" alt="">
+        <!-- <img src="./src/image/Happy buy.png" alt=""> -->
         <title class="project-title">Happy Buy</title>
         <p class="project-description">Description</p>
         <p class="project-tech-stack">Tech Stack</p>

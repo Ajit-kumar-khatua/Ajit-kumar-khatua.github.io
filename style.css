@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 3rem 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: .938rem;
+    color: hsl(224, 56%, 12%);
+  }
+#nav-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    /* border: 1px solid red; */
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #CFD8DC;
+}
+
+#nav-menu #child1{
+    height: 100%;
+    width:30%;
+    /* border: 1px solid green; */
+    padding-top: 18px;
+}
+#nav-menu #child1 a{
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 50%;
+    color: black;
+    
+}
+#nav-menu #child2{
+    height: 100%;
+    width:55%;
+    padding-top: 18px;
+    /* border: 1px solid green; */
+}
+#nav-menu #child2 a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    margin-left: 5%;
+    
+}
+#home{   
+    height: 90vh;
+    width: 85%;
+    margin: auto;
+    margin-top: 5%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+#home #child1{
+   margin-top: 10%;
+}
+#home #child1 span{
+    color: #3949AB;
+}
+#home h1{
+    font-size: 59px;
+    margin-top: 20px;
+}
+#logo{
+    display: flex;
+    margin-top: 30px;
+}
+#logo img{
+    height: 50px;
+    width: 50px;
+    margin-left:10px;
+}
+#resume-btn{
+    height: 7vh;
+    width: 25vh;
+    margin: 20px 0px 0px 30px;
+    font-size: 20px;
+    background-color: hsl(224, 89%, 60%);
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+.home-img{
+    border-radius: 40%;
+    margin: 40% 0% 0% 0%;
+ }
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    #nav-menu #child1{
+        height: 100%;
+        width:30%;
+        /* border: 1px solid green; */
+        padding-top: 18px;
+    }
+    #nav-menu #child2{
+        height: 100%;
+        width:70%;
+        padding-top: 18px;
+        /* border: 1px solid green; */
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:768px) {
+    #nav-menu #child1{
+        height: 100%;
+        width:10%;
+        /* border: 1px solid green; */
+        padding-top: 18px;
+    }
+    #nav-menu #child1 a{
+        font-size: 17px;
+        text-decoration: none;
+        margin-left: 20%;
+        color: black;
+        
+    }
+    #nav-menu #child2{
+        height: 100%;
+        width:90%;
+        padding-top: 18px;
+        /* border: 1px solid green; */
+    }
+    #nav-menu #child2 a{
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        margin-left: 4%;
+        
+    }
+}
