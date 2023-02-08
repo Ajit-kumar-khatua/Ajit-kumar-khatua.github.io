@@ -1,156 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME PAGE</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <nav id="nav-menu">
-      <div id="child1">
-        <a href="#">AJIT</Ajit></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOME PAGE</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <nav id="nav-menu">
+    <div id="child1">
+      <a href="#">AJIT</Ajit></a>
+    </div>
+    <div id="child2">
+      <a class="nav-link home" href="#home">HOME</a>
+      <a class="nav-link about" href="#about">ABOUT</a>
+      <a class="nav-link skills" href="#skills">SKILLS</a>
+      <a class="nav-link projects" href="#projects">PROJECTS</a>
+      <a class="nav-link contact" href="#contact">CONTACT</a>
+      <!-- <a class="nav-link resume" href="#"></a> -->
+      <a id="resume-button-1" onclick="window.open('./resume/Abhishek-Resume.pdf', '_blank');" download="">Resume
+      </a>
+    </div>
+
+  </nav>
+  <!-------------------- HOME ---------------------->
+  <section id="home">
+    <div id="child1">
+      <h1>Hi,</h1>
+      <h1>I'm <span>Ajit Kumar Khatua</span></h1>
+      <h1>Full Stack Web Developer</h1>
+      <div id="logo">
+        <a href="https://github.com/Ajit-kumar-khatua" target="_blank"><img src="./src/image/github logo.png"
+            alt=""></a>
+        <a href="https://www.linkedin.com/in/ajit-kumar-khatua-4631ab215" target="_blank"><img
+            src="./src/image/linkedin logo.png" alt=""></a>
       </div>
-      <div id="child2">
-        <a class="nav-link home" href="#home">HOME</a>
-        <a class="nav-link about" href="#about">ABOUT</a>
-        <a class="nav-link skills" href="#skills">SKILLS</a>
-        <a class="nav-link projects" href="#projects">PROJECTS</a>
-        <a class="nav-link contact" href="#contact">CONTACT</a>
-        <!-- <a class="nav-link resume" href="#"></a> -->
-          <a
-            id="resume-button-1"
-            onclick="window.open('./resume/Abhishek-Resume.pdf', '_blank');"
-            download=""
-            >Resume
-          </a>
-      </div>
-     
-    </nav>
-    <!-------------------- HOME ---------------------->
-    <section id="home">
-      <div id="child1">
-         <h1>Hi,</h1>
-          <h1>I'm <span>Ajit Kumar Khatua</span></h1>
-          <h1>Full Stack Web Developer</h1>
-          <div id="logo">
-            <a href="https://github.com/Ajit-kumar-khatua" target="_blank"><img src="./src/image/github logo.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/ajit-kumar-khatua-4631ab215" target="_blank"><img src="./src/image/linkedin logo.png" alt=""></a>
-          </div> 
-          <button id="resume-btn">Resume</button>       
-        </div>
-        <div>
-          <img src="./src/image/imageedit_1_5029899168.png" class="home-img" alt="#" /> 
-        </div>
-      <!-- <a
+      <button id="resume-btn">Resume</button>
+    </div>
+    <div>
+      <img src="./src/image/imageedit_1_5029899168.png" class="home-img" alt="#" />
+    </div>
+    <!-- <a
         id="resume-button-2"
         onclick="window.open('./resume/Abhishek-Resume.pdf', '_blank');"
         download=""
         >Resume2</a
       > -->
-    </section>
-    <!-------------------- ABOUT ---------------------->
-    <section id="about" class="about section">
-      <title>About</title>
-      <h1 id="user-detail-name">AJIT KUMAR KHATUA</h1>
-      <h2 id="user-detail-intro">
-        I am a full Stack Web Developer 
-      </h2>
-    </section>
-    <!-------------------- SKILLS ---------------------->
-    <section id="skills">
-      <div class="skills-card">
-        <img
-          class="skills-card-img"
-          src=""
-          alt="nodejs.png"
-        />
-        <h5 class="skills-card-name">Node JS</h5>
+  </section>
+  <!-------------------- ABOUT ---------------------->
+  <section id="about" class="about section">
+    <title>About</title>
+    <h1 id="about-me">About</h1>
+    <div id="about-details">
+      <div>
+        <img src="./src/image/web dev2.png" alt="">
       </div>
-      <div class="skills-card">
-        <img
-          class="skills-card-img"
-          src="./image/expressjs_logo.png"
-          alt="express.png"
-        />
-        <h5 class="skills-card-name">Express JS</h5>
+      <div id="about-details-child2">
+        <h1 id="user-detail-name">I'm Ajit kumar khatua</h1>
+        <p id="user-detail-intro">
+          I am a full Stack Web Developer dedicated to develop robust applications that interact with the Backend part of web application.
+          Extensive expertise in website architecture, design and web API designs.
+          <br>
+          <br>
+          I have 1200+ hrs of coding experience and 300+ hrs of DSA problem solving skills.I am highly proficient in HTML, CSS, Javascript, Node JS and MongoDB.
+          <br>
+          <br>
+          Looking forward to utilizing current skillset and experience of working on projects to create a mark in the software industry and achieve organizational goals. 
+        </p>
       </div>
-      <div class="skills-card">
-        <img
-          class="skills-card-img"
-          src="./image/mongoDB_logo.png"
-          alt="mongodb.png"
-        />
-        <h5 class="skills-card-name">Mongo DB</h5>
-      </div>
-    </section>
-    <!-------------------- PROJECTS ---------------------->
-    <section id="projects">
-      <!-- 1 -->
-      <div class="project-card">
-        <!-- <img src="./src/image/Baby's Fashion.png" alt=""> -->
-        <title class="project-title">Baby's Fashion</title>
-        <p class="project-description">Description</p>
-        <p class="project-tech-stack">Tech Stack</p>
-        <a class="project-github-link" href="https://github.com/Ajit-kumar-khatua/industrious-steam-9257">GitHub</a>
-        <a class="project-deployed-link"href="https://babysfashion.netlify.app/">Netlify</a>
-      </div>
-      <!-- 2 -->
-      <div class="project-card">
-        <!-- <img src="./src//image/MY tv.png" alt=""> -->
-        <title class="project-title">MyTv</title>
-        <p class="project-description">Description</p>
-        <p class="project-tech-stack">Tech Stack</p>
-        <a class="project-github-link" href="https://github.com/abhishek1494k/brainy-sidewalk-2900">GitHub</a>
-        <a class="project-deployed-link"href="https://mytv-com.netlify.app/">Netlify</a>
-      </div>
-      <!-- 3 -->
-      <div class="project-card">
-        <!-- <img src="./src/image/Happy buy.png" alt=""> -->
-        <title class="project-title">Happy Buy</title>
-        <p class="project-description">Description</p>
-        <p class="project-tech-stack">Tech Stack</p>
-        <a class="project-github-link" href="https://github.com/Ajit-kumar-khatua/known-team-2224">GitHub</a>
-        <a class="project-deployed-link"href="https://happybuy.netlify.app/">Netlify</a>
-      </div>
-    </section>
-    <!-------------------- CONTACTS ---------------------->
-    <section id="contact">
-      <h1>Contact</h1>
-      <a id="contact-github" href="https://github.com/Ajit-kumar-khatua">GitHub</a>
-      <a id="contact-linkedin" href="https://www.linkedin.com/in/ajit-kumar-khatua-4631ab215/"
-        >LinkedIn</a
-      >
-      <a id="contact-phone" href="#">Mobile</a>
-      <a id="contact-email" href="ajitkumarkhatua286@gmail.com">Email</a>
-    </section>
-    <!-------------------- RESUME ---------------------->
-    <section id="resume"></section>
-    <!-------------------- GitHUB ---------------------->
-    <section class="react-activity-calendar">
-      <h1>GitHub React-Activity-Calendar</h1>
-      <img
-        id="github-streak-stats"
-        src="https://github-readme-streak-stats.herokuapp.com/?user=ajit-kumar-khatua&"
-        alt="streakstat"
-      />
-      <img
-        id="github-top-langs"
-        src="https://github-readme-stats.vercel.app/api/top-langs?username=ajit-kumar-khatua&show_icons=true&locale=en&layout=compact"
-        alt="top_languages"
-      />
-      <img
-        id="github-stats-card"
-        src="https://github-readme-stats.vercel.app/api?username=ajit-kumar-khatua&show_icons=true&locale=en"
-        alt="stat-card"
-      />
-      <img
-      id="github-stats-card"
+    </div>
+
+  </section>
+  <!-------------------- SKILLS ---------------------->
+  
+  <section id="skills">
+    <h1 id="my-skills">Skills</h1>
+    <div id="skill-child1">
+    <div class="skills-card">
+      <img class="skills-card-img" src="./src/image/html.png" alt="html" />
+      <h5 class="skills-card-name">HTML5</h5>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img" src="./src/image/css.png" alt="css" />
+      <h5 class="skills-card-name">CSS</h5>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img" src="./src/image/js.png" alt="js" />
+      <h5 class="skills-card-name">Javascript</h5>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img" src="./src/image/node js.png" alt="nodejs.png" />
+      <h5 class="skills-card-name">Node JS</h5>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img" src="./src/image/express.png" alt="express.png" />
+      <h5 class="skills-card-name">Express JS</h5>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img" src="./src/image/mongoDB.png" alt="mongodb.png" />
+      <h5 class="skills-card-name">Mongo DB</h5>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img" src="./src/image/socket.webp" alt="socket" />
+      <h5 class="skills-card-name">Socket</h5>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img" src="./src/image/sql.png" alt="sql" />
+      <h5 class="skills-card-name">SQL</h5>
+    </div>
+  </div>
+  </section>
+
+  <section id="skills">
+    <h1 id="my-tools">Tools</h1>
+    <div id="skill-child1">
+   
+    <div class="skills-card">
+      <img class="skills-card-img" src="./src/image/aws.png" alt="nodejs.png" />
+      <h5 class="skills-card-name">AWS</h5>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img" src="./src/image/cypress.webp" alt="express.png" />
+      <h5 class="skills-card-name">Cypress</h5>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img" src="./src/image/postman-icon.webp" alt="mongodb.png" />
+      <h5 class="skills-card-name">Postman</h5>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img" src="./src/image/GitHub.png" alt="socket" />
+      <h5 class="skills-card-name">Github</h5>
+    </div>
+  </div>
+  </section>
+  <!-------------------- PROJECTS ---------------------->
+  <section id="projects">
+    <!-- 1 -->
+    <div class="project-card">
+      <!-- <img src="./src/image/Baby's Fashion.png" alt=""> -->
+      <title class="project-title">Baby's Fashion</title>
+      <p class="project-description">Description</p>
+      <p class="project-tech-stack">Tech Stack</p>
+      <a class="project-github-link" href="https://github.com/Ajit-kumar-khatua/industrious-steam-9257">GitHub</a>
+      <a class="project-deployed-link" href="https://babysfashion.netlify.app/">Netlify</a>
+    </div>
+    <!-- 2 -->
+    <div class="project-card">
+      <!-- <img src="./src//image/MY tv.png" alt=""> -->
+      <title class="project-title">MyTv</title>
+      <p class="project-description">Description</p>
+      <p class="project-tech-stack">Tech Stack</p>
+      <a class="project-github-link" href="https://github.com/abhishek1494k/brainy-sidewalk-2900">GitHub</a>
+      <a class="project-deployed-link" href="https://mytv-com.netlify.app/">Netlify</a>
+    </div>
+    <!-- 3 -->
+    <div class="project-card">
+      <!-- <img src="./src/image/Happy buy.png" alt=""> -->
+      <title class="project-title">Happy Buy</title>
+      <p class="project-description">Description</p>
+      <p class="project-tech-stack">Tech Stack</p>
+      <a class="project-github-link" href="https://github.com/Ajit-kumar-khatua/known-team-2224">GitHub</a>
+      <a class="project-deployed-link" href="https://happybuy.netlify.app/">Netlify</a>
+    </div>
+  </section>
+  <!-------------------- CONTACTS ---------------------->
+  <section id="contact">
+    <h1>Contact</h1>
+    <a id="contact-github" href="https://github.com/Ajit-kumar-khatua">GitHub</a>
+    <a id="contact-linkedin" href="https://www.linkedin.com/in/ajit-kumar-khatua-4631ab215/">LinkedIn</a>
+    <a id="contact-phone" href="#">Mobile</a>
+    <a id="contact-email" href="ajitkumarkhatua286@gmail.com">Email</a>
+  </section>
+  <!-------------------- RESUME ---------------------->
+  <section id="resume"></section>
+  <!-------------------- GitHUB ---------------------->
+  <section class="react-activity-calendar">
+    <h1>GitHub React-Activity-Calendar</h1>
+    <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=ajit-kumar-khatua&"
+      alt="streakstat" />
+    <img id="github-top-langs"
+      src="https://github-readme-stats.vercel.app/api/top-langs?username=ajit-kumar-khatua&show_icons=true&locale=en&layout=compact"
+      alt="top_languages" />
+    <img id="github-stats-card"
+      src="https://github-readme-stats.vercel.app/api?username=ajit-kumar-khatua&show_icons=true&locale=en"
+      alt="stat-card" />
+    <img id="github-stats-card"
       src="https://github-readme-stats.vercel.app/api?username=ajit-kumar-khatua&show_icons=true&locale=en%22%20alt=%22ajit-kumar-khatua"
-      alt="stat-card"
-    />
+      alt="stat-card" />
     <!-- [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/anuraghazra/github-readme-stats) -->
-    </section>
-  </body>
+  </section>
+</body>
+
 </html>
