@@ -173,6 +173,75 @@ body {
     padding-top: 5%;
 }
 
+#my-projects{
+    text-align: center;
+    color: hsl(224, 89%, 60%);
+    font-size: 2.3rem;
+    text-decoration: underline;
+    margin-top: 5%;
+    padding-top: 5%;
+}
+
+#project-child1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: auto;
+    gap: 5%;
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+}
+.project-card{
+    height: 80vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    text-align: center;
+    font-size: 19px;
+    border-radius: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.project-card img{
+    width: 80%;
+    height: 50%;
+    margin: 20px 0px 10px 5%;
+}
+.project-card p{
+    margin-left: 30px;
+}
+.project-description a{
+    text-decoration: none;
+}
+.project-tech-stack span{
+    font-weight: bold;
+}
+.project-github-link{
+    height: 35px;
+    width: 100px;
+    background-color: hsl(224, 89%, 60%);
+    color: white;
+    font-size: 19px;
+    border: none;
+    border-radius: 10px;
+}
+.project-github-link a{
+    text-decoration: none;
+    color: white;
+}
+
+.project-deployed-link{
+    height: 35px;
+    width: 100px;
+    background-color: hsl(224, 89%, 60%);
+    color: white;
+    font-size: 19px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+.project-deployed-link a{
+    text-decoration: none;
+    color: white;
+}
 
 
 @media screen and (min-width:769px) and (max-width:1024px) {
@@ -212,6 +281,7 @@ body {
     #about{
         /* border: 1px solid yellow; */
         margin-top: 10%;
+        padding-top: 7%;
      }
     #about-me{
         text-align: center;
@@ -238,7 +308,7 @@ body {
         font-size: 20px;
     }
     #skills{
-        padding-top: 20px;
+        padding-top: 4px;
     }
     #skill-child1{
         display: grid;
@@ -287,6 +357,40 @@ body {
         margin-top: 10%;
         padding-top: 5%;
     }
+    #my-projects{
+        text-align: center;
+        color: hsl(224, 89%, 60%);
+        font-size: 2.3rem;
+        text-decoration: underline;
+        margin-top: 5%;
+        padding-top: 7%;
+    }
+    #project-child1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+        gap: 5%;
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+    }
+    .project-card{
+        height: 60vh;
+        width: 100%;
+        /* border: 1px solid red; */
+        text-align: center;
+        font-size: 19px;
+        border-radius: 30px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .project-card img{
+        width: 80%;
+        height: 50%;
+        margin: 20px 0px 10px 5%;
+    }
+    .project-card p{
+        margin-left: 20px;
+    }
 }
 
 @media screen and (min-width:321px) and (max-width:768px) {
@@ -329,6 +433,7 @@ body {
      #about{
         /* border: 1px solid yellow; */
         margin-top: 10%;
+        padding-top: 10%;
      }
     #about-me{
         text-align: center;
@@ -404,6 +509,40 @@ body {
         text-decoration: underline;
         margin-top: 10%;
         padding-top: 5%;
+    }
+    #my-projects{
+        text-align: center;
+        color: hsl(224, 89%, 60%);
+        font-size: 2.3rem;
+        text-decoration: underline;
+        margin-top: 5%;
+        padding-top: 10%;
+    }
+    #project-child1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+        gap: 5%;
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+    }
+    .project-card{
+        height: 60vh;
+        width: 100%;
+        /* border: 1px solid red; */
+        text-align: center;
+        font-size: 19px;
+        border-radius: 30px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .project-card img{
+        width: 80%;
+        height: 50%;
+        margin: 20px 0px 10px 5%;
+    }
+    .project-card p{
+        margin-left: 20px;
     }
 }
 
@@ -510,5 +649,42 @@ body {
         text-decoration: underline;
         margin-top: 40%;
         padding-top: 5%;
+    }
+  
+    #my-projects{
+        text-align: center;
+        color: hsl(224, 89%, 60%);
+        font-size: 2.3rem;
+        text-decoration: underline;
+        margin-top: 10%;
+        padding-top: 20%;
+        margin-left: 60%;
+    }
+    #project-child1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: auto;
+        gap: 5%;
+        width: 180%;
+        margin: auto;
+        margin-top: 5%;
+        height: auto;
+    }
+    .project-card{
+        height: 60vh;
+        width: 100%;
+        /* border: 1px solid red; */
+        text-align: center;
+        font-size: 19px;
+        border-radius: 30px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .project-card img{
+        width: 80%;
+        height: 50%;
+        margin: 20px 0px 10px 5%;
+    }
+    .project-card p{
+        margin-left: 20px;
     }
 }
