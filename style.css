@@ -192,7 +192,7 @@ body {
     margin-top: 5%;
 }
 .project-card{
-    height: 80vh;
+    height: 85vh;
     width: 100%;
     /* border: 1px solid red; */
     text-align: center;
@@ -203,7 +203,7 @@ body {
 .project-card img{
     width: 80%;
     height: 50%;
-    margin: 20px 0px 10px 5%;
+    margin: 0px 0px 10px 5%;
 }
 .project-card p{
     margin-left: 30px;
@@ -393,7 +393,7 @@ body {
     }
 }
 
-@media screen and (min-width:321px) and (max-width:768px) {
+@media screen and (min-width:501px) and (max-width:768px) {
     #nav-menu #child1{
         height: 100%;
         width:10%;
@@ -546,7 +546,7 @@ body {
     }
 }
 
-@media screen and (min-width:100px) and (max-width:320px){
+@media screen and (min-width:100px) and (max-width:500px){
     
 
     #home{
@@ -664,7 +664,7 @@ body {
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-auto-rows: auto;
-        gap: 5%;
+        gap: 15%;
         width: 180%;
         margin: auto;
         margin-top: 5%;
