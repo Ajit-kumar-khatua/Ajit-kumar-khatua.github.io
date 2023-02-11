@@ -76,7 +76,7 @@ body {
     width: 50px;
     margin-left:10px;
 }
-#resume-btn{
+#resume-button-2{
     height: 7vh;
     width: 25vh;
     margin: 20px 0px 0px 30px;
@@ -85,6 +85,10 @@ body {
     color: white;
     border: none;
     border-radius: 7px;
+}
+#resume-button-2 a{
+    text-decoration: none;
+    color: white;
 }
 .home-img{
     border-radius: 40%;
