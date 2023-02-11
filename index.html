@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HOME PAGE</title>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://kit.fontawesome.com/3e90fa2a97.css" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/3e90fa2a97.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,7 +23,7 @@
       <a class="nav-link projects" href="#projects">PROJECTS</a>
       <a class="nav-link contact" href="#contact">CONTACT</a>
       <!-- <a class="nav-link resume" href="#"></a> -->
-      <a id="resume-button-1" href="./src/Resume/Ajit_Khatua_Resume.pdf" target="_blank" download="">Resume
+      <a id="resume-button-1" class="nav-link resume" href="./src/Resume/Ajit_Khatua_Resume.pdf" target="_blank" download="">Resume
       </a>
     </div>
 
@@ -216,11 +218,32 @@
 
  <!-------------------- CONTACTS ---------------------->
  <section id="contact">
-  <h1>Contact</h1>
-  <a id="contact-github" href="https://github.com/Ajit-kumar-khatua">GitHub</a>
-  <a id="contact-linkedin" href="https://www.linkedin.com/in/ajit-kumar-khatua-4631ab215/">LinkedIn</a>
-  <a id="contact-phone" href="#">Mobile</a>
-  <a id="contact-email" href="ajitkumarkhatua286@gmail.com">Email</a>
+  <h1 id="my-contacts">Contact me</h1>
+  <div id="contact-child1">
+    <div id="left-child">
+      <h3>Get in Touch</h3>
+      <br>
+      <p>Got a project? Reach out and let's work together on something exciting. Big or small.</p>
+      <br>
+      <a id="contact-email" href="ajitkumarkhatua286@gmail.com"><i class="fa-solid fa-envelope"></i>ajitkumarkhatua286@gmail.com</a>
+      <br>
+      <a id="contact-phone" href="#"><i class="fa-solid fa-phone"></i>+91 6371091440</a>
+      <br>
+      <a id="contact-linkedin" href="https://www.linkedin.com/in/ajit-kumar-khatua-4631ab215/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+      <br>
+      <a id="contact-github" href="https://github.com/Ajit-kumar-khatua"><i class="fa-brands fa-github"></i>GitHub</a> 
+    </div>
+    <div id="right-child">
+      <h2>Message me</h2>
+      <form action="">
+        <input type="text" placeholder="Name" id="name" required>
+        <input type="email" placeholder="Email" id="email" required>
+        <input type="text" placeholder="Subject" id="subject" required>
+        <input type="text" placeholder="Message.." id="message" required>
+        <input type="submit" id="submit" value="Send Message">
+      </form>
+    </div>
+  </div>
 </section>
 </body>
 
