@@ -405,10 +405,10 @@ body {
     color: white;
 }
 #hamberger-icon{
-    display: none;
+    display: block;
     margin: auto 0;
     cursor: pointer;
-    margin-right: 10%;
+    /* margin-right: 10%; */
 }
 
 #hamberger-icon div{
@@ -417,6 +417,7 @@ body {
   background-color: black;
   margin: 6px 0;
   transition: 0.4s;
+  display: none;
 }
 .open .bar3{
     -webkit-transform: rotate(-45deg) translate(-6px -8px);
@@ -430,28 +431,7 @@ body {
     -webkit-transform: rotate(-45deg) translate(-6px 6px);
     transform:rotate(45deg) translate(-6px 6px) ;
 }
-.open .mobile-menu{
-    display: flex;
-    flex-direction: column;
-    padding-left: 13%;
-    /* align-items: center; */
-    justify-content: flex-start;
-}
-.mobile-menu{
-    display: none;
-    position: absolute;
-    top:50px;
-    left: 0;
-    width:100%;
-    font-size: 30px;
-    background-color: #CFD8DC;
-    padding-top: 20px;
-}
-.mobile-menu a{
-    text-decoration: none;
-    margin: 10px;
-    color: black;
-}
+
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     #nav-menu {
@@ -1000,15 +980,49 @@ body {
 }
 
 @media screen and (min-width:100px) and (max-width:500px){
+    #nav-menu #child1{
+        margin-left: 12%;
+    }
       #nav-menu #child1 a{
         font-size: 30px;
       }
      #nav-menu #child2{
-        display: none;
+        display: block;
+        padding-left: 70%;
      }
      #hamberger-icon{
         display: block; 
     }
+    .open .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+        /* align-items: center;  */
+        justify-content: flex-start;
+     } 
+    .mobile-menu{
+        display: none;
+        position: absolute;
+        top:50px;
+        left: 0;
+        width:100%;
+        font-size: 40px;
+        background-color: #CFD8DC;
+        padding-top: 20px;
+    }
+    .mobile-menu a{
+        text-decoration: none;
+        margin: 10px;
+        color: black;
+    }
+    #hamberger-icon div{
+        width: 35px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+        transition: 0.4s;
+        display: block;
+      }
 
     #home{
         display: block;
