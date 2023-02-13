@@ -155,10 +155,44 @@ body {
     width: 100%;
 }
 #skills img:hover{
-    height: 90%;
+    height: 85%;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+#tools-child1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: auto;
+    gap: 5%;
+    width: 85%;
+    margin: auto;
+    padding-top: 5%;
+    /* background-color: hsl(224, 56%, 12%); */
+    /* color: white; */
+}
+.tools-card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+    height: 45vh;
+    border-radius: 30px;
+}
+.tools-card-name{
+    font-size: 23px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+#tools img{
+    height: 80%;
+    width: 100%;
+}
+#tools img:hover{
+    height: 85%;
     width: 110%;
     cursor: pointer;
 }
+
+
 
 #my-skills{
     text-align: center;
@@ -370,6 +404,54 @@ body {
     background-color: hsl(224, 89%, 60%);
     color: white;
 }
+#hamberger-icon{
+    display: none;
+    margin: auto 0;
+    cursor: pointer;
+    margin-right: 10%;
+}
+
+#hamberger-icon div{
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.open .bar3{
+    -webkit-transform: rotate(-45deg) translate(-6px -8px);
+    transform:rotate(45deg) translate(-6px -8px) ;
+}
+
+.open .bar2{
+   opacity: 0;
+}
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px 6px);
+    transform:rotate(45deg) translate(-6px 6px) ;
+}
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    padding-left: 13%;
+    /* align-items: center; */
+    justify-content: flex-start;
+}
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top:50px;
+    left: 0;
+    width:100%;
+    font-size: 30px;
+    background-color: #CFD8DC;
+    padding-top: 20px;
+}
+.mobile-menu a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     #nav-menu {
@@ -468,6 +550,43 @@ body {
         cursor: pointer;
     }
     
+    
+    #tools{
+        padding-top: 4px;
+    }
+    #tools-child1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: auto;
+        gap: 5%;
+        width: 85%;
+        margin: auto;
+        padding-top: 5%;
+        /* background-color: hsl(224, 56%, 12%); */
+        /* color: white; */
+    }
+    .tools-card{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+        height: 35vh;
+        border-radius: 30px;
+    }
+    .tools-card-name{
+        font-size: 23px;
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+    }
+    #tools img{
+        height: 70%;
+        width: 100%;
+    }
+    #tools img:hover{
+        height: 90%;
+        width: 110%;
+        cursor: pointer;
+    }
+
+
+
     #my-skills{
         text-align: center;
         color: hsl(224, 89%, 60%);
@@ -688,6 +807,41 @@ body {
         width: 110%;
         cursor: pointer;
     }
+
+
+    #tools{
+        padding-top: 33px;
+    }
+    #tools-child1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: auto;
+        gap: 5%;
+        width: 85%;
+        margin: auto;
+        padding-top: 5%;
+        /* background-color: hsl(224, 56%, 12%); */
+        /* color: white; */
+    }
+    .tools-card{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+        height: 35vh;
+        border-radius: 30px;
+    }
+    .tools-card-name{
+        font-size: 23px;
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+    }
+    #tools img{
+        height: 70%;
+        width: 100%;
+    }
+    #tools img:hover{
+        height: 90%;
+        width: 110%;
+        cursor: pointer;
+    }
     
     #my-skills{
         text-align: center;
@@ -846,7 +1000,15 @@ body {
 }
 
 @media screen and (min-width:100px) and (max-width:500px){
-    
+      #nav-menu #child1 a{
+        font-size: 30px;
+      }
+     #nav-menu #child2{
+        display: none;
+     }
+     #hamberger-icon{
+        display: block; 
+    }
 
     #home{
         display: block;
@@ -868,6 +1030,7 @@ body {
         /* border: 1px solid yellow; */
         margin-top: 10%;
         margin-bottom: 10%;
+        padding-top: 17%;
      }
     #about-me{
         /* text-align: center; */
@@ -902,7 +1065,22 @@ body {
         padding-top: 20px;
         width: 180%;
     }
+    #tools{
+        padding-top: 20px;
+        width: 180%;
+    }
     #skill-child1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+        gap: 5%;
+        width: 85%;
+        margin: auto;
+        padding-top: 10%;
+        /* background-color: hsl(224, 56%, 12%); */
+        /* color: white; */
+    }
+    #tools-child1{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-auto-rows: auto;
@@ -932,6 +1110,29 @@ body {
         width: 110%;
         cursor: pointer;
     }
+
+
+    .tools-card{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+        height: 35vh;
+        border-radius: 30px;
+    }
+    .tools-card-name{
+        font-size: 23px;
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+    }
+    #tools img{
+        height: 70%;
+        width: 100%;
+    }
+    #tools img:hover{
+        height: 90%;
+        width: 110%;
+        cursor: pointer;
+    }
+
+
     
     #my-skills{
         text-align: center;
