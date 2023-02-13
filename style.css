@@ -1001,7 +1001,7 @@ body {
         justify-content: flex-start;
      } 
     .mobile-menu{
-        display: block;
+        display: none;
         position: absolute;
         top:50px;
         left: 0;
