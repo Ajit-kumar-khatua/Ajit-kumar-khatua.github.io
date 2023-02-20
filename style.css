@@ -25,7 +25,7 @@ body {
     height: 100%;
     width:30%;
     /* border: 1px solid green; */
-    padding-top: 18px;
+    padding-top: 25px;
 }
 #nav-menu #child1 a{
     font-size: 18px;
@@ -37,7 +37,7 @@ body {
 #nav-menu #child2{
     height: 100%;
     width:55%;
-    padding-top: 18px;
+    padding-top: 25px;
     /* border: 1px solid green; */
 }
 #nav-menu #child2 a{
