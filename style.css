@@ -230,7 +230,7 @@ body {
     margin-top: 5%;
 }
 .project-card{
-    height: auto;
+    height: 83vh;
     width: 100%;
     /* border: 1px solid red; */
     text-align: center;
@@ -428,10 +428,7 @@ body {
     -webkit-transform: rotate(-45deg) translate(-6px 6px);
     transform:rotate(45deg) translate(-6px 6px) ;
 }
-.open .bar3{
-    -webkit-transform: rotate(-45deg) translate(-6px -8px);
-    transform:rotate(45deg) translate(-6px -8px) ;
-}
+
 
 
 @media screen and (min-width:769px) and (max-width:1024px) {
@@ -981,6 +978,9 @@ body {
 }
 
 @media screen and (min-width:100px) and (max-width:500px){
+    #nav-menu{
+        height: 100px;
+    }
     #nav-menu #child1{
         margin-left: 12%;
     }
@@ -989,7 +989,7 @@ body {
       }
      #nav-menu #child2{
         display: block;
-        padding-left: 70%;
+        padding-left: 50%;
      }
      #hamberger-icon{
         display: block; 
@@ -1002,7 +1002,7 @@ body {
         justify-content: flex-start;
      } 
     .mobile-menu{
-        display: block;
+        display: none;
         position: absolute;
         top:50px;
         left: 0;
