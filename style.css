@@ -991,7 +991,7 @@ body {
 @media screen and (min-width:100px) and (max-width:500px){
     #nav-menu{
         position: fixed;
-        height: auto;
+        height: 80px
     }
     #nav-menu #child1{
         width: 60%;
@@ -1013,6 +1013,7 @@ body {
         padding-left: 5%;
         /* align-items: center;  */
         justify-content: flex-start;
+        margin-top: 10px;
      } 
     .mobile-menu{
         display: none;
