@@ -1053,6 +1053,7 @@ body {
     .home-img{
         /* border-radius: 40%; */
         margin: 10% 0% 0% 10%;
+        z-index: -1;
      }
 
      #about{
@@ -1060,6 +1061,7 @@ body {
         margin-top: 10%;
         margin-bottom: 10%;
         padding-top: 17%;
+        z-index: -1;
      }
     #about-me{
         /* text-align: center; */
