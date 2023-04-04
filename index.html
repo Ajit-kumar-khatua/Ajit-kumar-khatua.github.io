@@ -6,15 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HOME PAGE</title>
-  <link rel="stylesheet" href="./style.css" />
+  
   <link rel="stylesheet" href="https://kit.fontawesome.com/3e90fa2a97.css" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
   <script src="https://kit.fontawesome.com/3e90fa2a97.js" crossorigin="anonymous"></script>
+ 
 </head>
 
 <body>
-  <nav id="nav-menu">
+  <nav id="nav-menu" >
     <div id="child1">
-      <a href="#">AJIT  KHATUA</a>
+      <a href="#">AJIT KHATUA</a>
     </div>
     <div id="child2">
      
@@ -78,10 +81,10 @@
     <title>About</title>
     <h1 id="about-me">About</h1>
     <div id="about-details">
-      <div>
+      <div data-aos="fade-right" data-aos-duration="2000">
         <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" alt="">
       </div>
-      <div id="about-details-child2">
+      <div id="about-details-child2" data-aos="fade-left" data-aos-duration="2000">
         <h1 id="user-detail-name">I'm Ajit kumar khatua</h1>
         <p id="user-detail-intro">
           I am a full Stack Web Developer dedicated to develop robust applications that interact with the Backend part of web application.
@@ -101,36 +104,36 @@
   
   <section id="skills">
     <h1 id="my-skills">Skills</h1>
-    <div id="skill-child1">
-    <div class="skills-card">
+    <div id="skill-child1" >
+    <div class="skills-card" data-aos="flip-left" data-aos-duration="2000">
       <img class="skills-card-img" src="./src/image/html.png" alt="html" />
       <h5 class="skills-card-name">HTML5</h5>
     </div>
-    <div class="skills-card">
+    <div class="skills-card" data-aos="flip-left" data-aos-duration="2000">
       <img class="skills-card-img" src="./src/image/css.png" alt="css" />
       <h5 class="skills-card-name">CSS</h5>
     </div>
-    <div class="skills-card">
+    <div class="skills-card" data-aos="flip-left" data-aos-duration="2000">
       <img class="skills-card-img" src="./src/image/js.png" alt="js" />
       <h5 class="skills-card-name">Javascript</h5>
     </div>
-    <div class="skills-card">
+    <div class="skills-card" data-aos="flip-left" data-aos-duration="2000">
       <img class="skills-card-img" src="./src/image/node js.png" alt="nodejs.png" />
       <h5 class="skills-card-name">Node JS</h5>
     </div>
-    <div class="skills-card">
+    <div class="skills-card" data-aos="flip-left" data-aos-duration="2000">
       <img class="skills-card-img" src="./src/image/express.png" alt="express.png" />
       <h5 class="skills-card-name">Express JS</h5>
     </div>
-    <div class="skills-card">
+    <div class="skills-card" data-aos="flip-left" data-aos-duration="2000">
       <img class="skills-card-img" src="./src/image/mongoDB.png" alt="mongodb.png" />
       <h5 class="skills-card-name">Mongo DB</h5>
     </div>
-    <div class="skills-card">
+    <div class="skills-card" data-aos="flip-left" data-aos-duration="2000">
       <img class="skills-card-img" src="./src/image/socket.webp" alt="socket" />
       <h5 class="skills-card-name">Socket</h5>
     </div>
-    <div class="skills-card">
+    <div class="skills-card" data-aos="flip-left" data-aos-duration="2000">
       <img class="skills-card-img" src="./src/image/sql.png" alt="sql" />
       <h5 class="skills-card-name">SQL</h5>
     </div>
@@ -141,19 +144,19 @@
     <h1 id="my-tools">Tools</h1>
     <div id="tools-child1">
    
-    <div class="tools-card">
+    <div class="tools-card" data-aos="flip-up" data-aos-duration="2000"> 
       <img class="tools-card-img" src="./src/image/aws.png" alt="nodejs.png" />
       <h5 class="tools-card-name">AWS</h5>
     </div>
-    <div class="tools-card">
+    <div class="tools-card" data-aos="flip-up" data-aos-duration="2000">
       <img class="tools-card-img" src="./src/image/cypress.webp" alt="express.png" />
       <h5 class="tools-card-name">Cypress</h5>
     </div>
-    <div class="tools-card">
+    <div class="tools-card" data-aos="flip-up" data-aos-duration="2000">
       <img class="tools-card-img" src="./src/image/postman-icon.webp" alt="mongodb.png" />
       <h5 class="tools-card-name">Postman</h5>
     </div>
-    <div class="tools-card">
+    <div class="tools-card" data-aos="flip-up" data-aos-duration="2000">
       <img class="tools-card-img" src="./src/image/GitHub.png" alt="socket" />
       <h5 class="tools-card-name">Github</h5>
     </div>
@@ -165,7 +168,7 @@
     <div id="project-child1">
     <!-- 1 -->
     <div class="project-card">
-      <img src="./src/image/Baby's Fashion.png" alt="">
+      <img src="./src/image/Baby's Fashion.png" alt="" >
       <h2 class="project-title">Baby's Fashion</h2>
       <!-- <br> -->
       <p class="project-description">It is an E-commerce website selling all baby fashion related products in the year range of 0 to 12 years.  It is clone of <a href="https://www.carters.com/" target="_blank">carters.com</a></p>
@@ -180,7 +183,7 @@
       <img src="./src/image/Home Page.png" alt="">
       <h2 class="project-title">Easy Poll</h2>
       <!-- <br> -->
-      <p class="project-description">It is a platform where a user can take responses in real time and it is a clone of <a href="https://www.slido.com/" target="_blank">Slido.com</a>. </p>
+      <p class="project-description">It is a platform where a user can take responses from other users in real time and it is clone of <a href="https://www.slido.com/" target="_blank">Slido.com</a>. </p>
       <!-- <br> -->
       <p class="project-tech-stack"><span>Tech Stack: </span> HTML,CSS, Javascript, Node JS, MongoDB,Web Soket</p>
       <!-- <br> -->
@@ -227,7 +230,8 @@
 
     <img id="github-stats-card"
       src="https://github-readme-stats.vercel.app/api?username=Ajit-kumar-khatua&show_icons=true&locale=en"
-      alt="stat-card" />
+      alt="stat-card"/>
+
       <br>
       <img id="github-top-langs"
       src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ajit-kumar-khatua&show_icons=true&locale=en&layout=compact"
@@ -267,7 +271,13 @@
     </div>
   </div>
 </section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
    <script src="./index.js"></script>
+   
 
 </html>
