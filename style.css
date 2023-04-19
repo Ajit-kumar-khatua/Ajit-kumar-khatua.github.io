@@ -243,15 +243,16 @@ body {
     text-align: center;
     font-size: 19px;
     border-radius: 30px;
+    padding: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .project-card img{
-    width: 80%;
+    width: 90%;
     height: 50%;
     margin: 0px 0px 10px 5%;
 }
 .project-card p{
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .project-description{
     margin-top: 10px;
